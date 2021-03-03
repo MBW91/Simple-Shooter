@@ -10,6 +10,8 @@ class SIMPLESHOOTER_API AGun : public AActor
 	GENERATED_BODY()
 
 private:
+	UPROPERTY(EditAnywhere)
+	float MaxRange = 1000.f;
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root;
 	UPROPERTY(VisibleAnywhere)

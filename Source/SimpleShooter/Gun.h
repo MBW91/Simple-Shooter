@@ -12,6 +12,8 @@ class SIMPLESHOOTER_API AGun : public AActor
 private:
 	UPROPERTY(EditAnywhere)
 	float MaxRange = 1000.f;
+	UPROPERTY(EditAnywhere)
+	float Damage = 10.f;
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root;
 	UPROPERTY(VisibleAnywhere)

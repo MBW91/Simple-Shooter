@@ -12,6 +12,11 @@ class SIMPLESHOOTER_API AShooterCharacter : public ACharacter
 private:
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
+	void LookUpRate(float AxisValue);
+	void LookRightRate(float AxisValue);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Controls", meta = (AllowPrivateAccess = "true"))
+	float RotationRate = 1.f;
 
 public:
 	AShooterCharacter();

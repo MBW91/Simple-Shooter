@@ -23,6 +23,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* ImpactEffect;
 
+	bool GunTrace(FHitResult& Hit, FVector& ShotDirection);
+	AController* GetOwnerController() const;
+
 public:
 	AGun();
 	virtual void Tick(float DeltaTime) override;

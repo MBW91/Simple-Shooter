@@ -15,7 +15,7 @@ private:
 	UPROPERTY(EditAnywhere)
 	class UBehaviorTree* AIBehavior;
 
-	//APawn* PlayerPawn;
+	APawn* PlayerPawn;
 
 public:
 	virtual void Tick(float DeltaTime) override;

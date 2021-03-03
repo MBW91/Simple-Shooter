@@ -1,4 +1,5 @@
 #include "ShooterCharacter.h"
+#include "Gun.h"
 
 AShooterCharacter::AShooterCharacter()
 {
@@ -9,6 +10,7 @@ void AShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
 }
 
 void AShooterCharacter::Tick(float DeltaTime)

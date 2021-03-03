@@ -18,6 +18,8 @@ private:
 	USkeletalMeshComponent* Mesh;
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* MuzzleFlash;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* ImpactEffect;
 
 public:
 	AGun();

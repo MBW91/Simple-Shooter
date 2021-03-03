@@ -37,6 +37,8 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
+	UFUNCTION(BlueprintPure)
+	float GetHealth() const;
 
 protected:
 	virtual void BeginPlay() override;

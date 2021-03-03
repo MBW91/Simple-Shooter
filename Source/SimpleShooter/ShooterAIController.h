@@ -10,10 +10,12 @@ class SIMPLESHOOTER_API AShooterAIController : public AAIController
 	GENERATED_BODY()
 
 private:
+	/*UPROPERTY(EditAnywhere)
+	float AcceptanceRadius = 200.f;*/
 	UPROPERTY(EditAnywhere)
-	float AcceptanceRadius = 200.f;
+	class UBehaviorTree* AIBehavior;
 
-	APawn* PlayerPawn;
+	//APawn* PlayerPawn;
 
 public:
 	virtual void Tick(float DeltaTime) override;

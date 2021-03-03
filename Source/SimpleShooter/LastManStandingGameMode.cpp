@@ -1,5 +1,6 @@
 #include "LastManStandingGameMode.h"
 #include "EngineUtils.h"
+#include "ShooterAIController.h"
 
 void ALastManStandingGameMode::PawnKilled(APawn* KilledPawn)
 {
@@ -10,6 +11,12 @@ void ALastManStandingGameMode::PawnKilled(APawn* KilledPawn)
 	{
 		EndGame(false);
 	}
+
+	for (AShooterAIController* Controller : TActorRange<AShooterAIController>(GetWorld()))
+	{
+		if (!Controller->IsDead()) return;
+	}
+	EndGame(true);
 }
 
 void ALastManStandingGameMode::EndGame(bool bIsPlayerWinner)

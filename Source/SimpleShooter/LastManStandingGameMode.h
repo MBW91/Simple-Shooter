@@ -9,6 +9,9 @@ class SIMPLESHOOTER_API ALastManStandingGameMode : public ASimpleShooterGameMode
 {
 	GENERATED_BODY()
 
+private:
+	void EndGame(bool bIsPlayerWinner);
+
 public:
 	virtual void PawnKilled(APawn* KilledPawn) override;
 };

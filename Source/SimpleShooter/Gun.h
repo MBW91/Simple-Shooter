@@ -14,6 +14,8 @@ private:
 	USceneComponent* Root;
 	UPROPERTY(VisibleAnywhere)
 	USkeletalMeshComponent* Mesh;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* MuzzleFlash;
 
 public:
 	AGun();

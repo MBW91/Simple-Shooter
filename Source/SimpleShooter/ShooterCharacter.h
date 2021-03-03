@@ -16,6 +16,7 @@ private:
 	void MoveRight(float AxisValue);
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
+	void Shoot();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Controls", meta = (AllowPrivateAccess = "true"))
 	float RotationRate = 1.f;
